@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   devise_for :users
-  root to: 'clients#new'
+  root to: 'clients#index'
 
   resources :clients, only: [:index, :create, :new, :show]
 
