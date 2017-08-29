@@ -2,18 +2,18 @@ class ClientsController < ApplicationController
   skip_before_action :authenticate_user!, only: [:index, :show, :new, :create]
   before_action :set_client, only: [:show]
 
-  def new
-    @client = Client.new
-  end
-
   def create
     @client = Client.new(client_params)
     if @client.valid?
       @client.save!
       redirect_to client_path(@client)
     else
-      render :new
+      render :index
     end
+  end
+
+  def index
+    @client = Client.new
   end
 
   def show
