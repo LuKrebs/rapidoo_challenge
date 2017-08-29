@@ -1,0 +1,26 @@
+<div class="row margin-top-md">
+  <div class="col-sm-6 col-sm-offset-3">
+    <div class="panel panel-default show-results">
+        <div class="panel-heading">
+            <h2 class="panel-title">Resultado: </h2>
+        </div>
+        <div class="panel-body">
+            <div class="well item">
+              <h4>Valor total do título: <span>R$ <%= @client.asset_value %></span></h4>
+            </div>
+            <div class="well item">
+              <h4>Prazo do título, em dias: <span><%= @due_date_in_days %></span></h4>
+            </div>
+            <div class="well item">
+              <h4>Taxa final: <span><%= @total_fee %>%</span></h4>
+            </div>
+            <div class="well item">
+              <h4>Valor do título com desconto: <span>R$ <%= @asset_with_descount %></span></h4>
+            </div>
+        </div>
+        <div class="panel-footer text-right">
+          <%= link_to "Recalcular", new_client_path, class: "btn btn-md btn-primary" %>
+        </div>
+    </div>
+  </div>
+</div>

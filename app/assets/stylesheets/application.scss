@@ -13,3 +13,12 @@
 @import "layouts/index";
 @import "components/index";
 @import "pages/index";
+
+.margin-top-md {
+ margin-top: $margin-top-md;
+}
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

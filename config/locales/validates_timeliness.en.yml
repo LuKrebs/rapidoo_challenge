@@ -1,0 +1,18 @@
+en:
+  errors:
+    messages:
+      invalid_date: "is not a valid date"
+      invalid_time: "is not a valid time"
+      invalid_datetime: "is not a valid datetime"
+      is_at: "must be at %{restriction}"
+      before: "must be before %{restriction}"
+      on_or_before: "must be on or before %{restriction}"
+      after: "must be after %{restriction}" # ~> Texto alterado para Português.
+      # TO-DO ~> criar o arquivo 'validates_timeliness.pt.yml' e definir ele como padrão
+      # Após isso, criar as validações em português
+      on_or_after: "O prazo mínimo de vencimento do título deve ser de 10 dias"
+  validates_timeliness:
+    error_value_formats:
+      date: '%Y-%m-%d'
+      time: '%H:%M:%S'
+      datetime: '%Y-%m-%d %H:%M:%S'
