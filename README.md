@@ -3,15 +3,14 @@ Rails App desenvolvido para o challenge da <a href="https://www.rapidoo.com.br">
 <p>Após ter clonado o repositório, por favor execute:</p>
 <ul>
   <li><code>bundle install</code> ~> Instalar as gems necessárias</li>
+  <li><code>rails db:migrate</code> ~> Executar as migrações necessárias</li>
 </ul>
-
-<tr></tr>
 
 <p>Requisitos de software:</p>
 <p>Versão ruby usada: <code>ruby 2.3.3p222</code></p>
 <p>Versão rails usada: <code>Rails 5.1.3</code></p>
 <p>Feito isso, você pode testar a aplicação locamente, com o seguinte comando:</p>
-<p><code>rails s</code></p>, e acessar http://localhost:3000
+<p><code>rails s</code> e acessar http://localhost:3000</p>
 
 <tr></tr>
 
@@ -35,4 +34,4 @@ Apos isso, o cliente obtem as seguintes informações:
 
 <tr></tr>
 <p>Bonus point: A Taxa-base é dinâmica variando com o faturamento mensal das empresas (p.e acima de 100k/mês é 1.5% e abaixo de 50k/mês é 1.8%);</p>
-<p>Bonus point: A demo da aplicação pode ser encontrada <a href="#">aqui</a>(heroku deploy)</p>
+<p>Bonus point: A demo da aplicação pode ser encontrada <a href="https://guarded-plateau-29367.herokuapp.com/">aqui</a> (heroku deploy)</p>
