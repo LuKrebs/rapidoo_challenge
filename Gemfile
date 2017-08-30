@@ -18,12 +18,16 @@ gem 'sass-rails'
 gem 'simple_form'
 gem 'uglifier'
 gem 'validates_timeliness', '~> 4.0' # Date validator helper
+  # gem 'web-console', '>= 3.3.0'
 
 group :development, :test do
   gem 'pry-byebug'
   gem 'pry-rails'
-  gem 'web-console', '>= 3.3.0'
   gem 'listen', '~> 3.0.5'
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'capybara'
+  gem 'poltergeist'
+  gem 'launchy'
+  gem 'minitest-reporters'
 end
